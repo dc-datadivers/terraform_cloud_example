@@ -1,3 +1,4 @@
+#Terraform example
 terraform {
   required_providers {
     snowflake = {
