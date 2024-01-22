@@ -7,10 +7,10 @@ terraform {
   }
 
   backend "remote" {
-    organization = "Terraform_Cloud_Example"
+    organization = "example-org-aa24dd"
 
     workspaces {
-      name = "gh-actions-demo"
+      name = "Terraform_Cloud_Example"
     }
   }
 }
