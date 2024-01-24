@@ -45,3 +45,20 @@ resource "snowflake_table" "example" {
     type = "NUMBER"
   }
 }
+
+resource "snowflake_table" "example2" {
+  name     = "mytable2"
+  database = snowflake_database.demo_db.name
+  schema   = snowflake_schema.demo_schema.name
+
+  column {
+    name = "column1"
+    type = "STRING"
+  }
+
+  column {
+    name = "column2"
+    type = "NUMBER(9,2)"
+    nullable = true
+  }
+}
