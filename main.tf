@@ -32,8 +32,8 @@ resource "snowflake_schema" "demo_schema" {
 
 resource "snowflake_table" "example" {
   name     = "mytable"
-  database = snowflake_database.example.name
-  schema   = snowflake_schema.example.name
+  database = snowflake_database.demo_db.name
+  schema   = snowflake_schema.demo_schema.name
 
   column {
     name = "column1"
