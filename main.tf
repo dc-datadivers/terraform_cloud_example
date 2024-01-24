@@ -59,6 +59,5 @@ resource "snowflake_table" "example2" {
   column {
     name = "column2"
     type = "NUMBER(9,2)"
-    nullable = true
   }
 }
