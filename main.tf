@@ -63,7 +63,7 @@ resource "snowflake_table" "example2" {
 }
 
 resource "snowflake_table" "example3" {
-  name     = "mytable3"
+  name     = "table3"
   database = snowflake_database.demo_db.name
   schema   = snowflake_schema.demo_schema.name
 
